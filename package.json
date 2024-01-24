@@ -1,0 +1,34 @@
+{
+  "name": "restapirssfeedfetcher",
+  "version": "1.0.0",
+  "description": "This will be the rest api app for RssFeedFetcher",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sksshouvo/restApiRssFeedFetcher.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "rss",
+    "feed",
+    "fetcher"
+  ],
+  "author": "sksshouvo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sksshouvo/restApiRssFeedFetcher/issues"
+  },
+  "homepage": "https://github.com/sksshouvo/restApiRssFeedFetcher#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
