@@ -1,8 +1,8 @@
-require('dotenv').config()
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const password = encodeURIComponent( process.env.DB_PASSWORD )
-console.log(password)
-const uri = `mongodb+srv://rss_feed_fetcher:${password}@testcluster.e3gnvkm.mongodb.net/?retryWrites=true&w=majority`
+const password = process.env.DB_PASSWORD;
+const encodedPassword = encodeURIComponent(password)
+
+const uri = `mongodb+srv://rss_feed_fetcher:${encodedPassword}@testcluster.e3gnvkm.mongodb.net/?retryWrites=true&w=majority`
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {

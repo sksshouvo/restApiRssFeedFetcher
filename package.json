@@ -4,7 +4,7 @@
   "description": "This will be the rest api app for RssFeedFetcher",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon --env-file=.env index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,7 +27,6 @@
   "dependencies": {
     "cloud": "^2.0.2",
     "config": "^3.3.10",
-    "dotenv": "^16.4.1",
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
     "mongoose": "^8.1.1",
