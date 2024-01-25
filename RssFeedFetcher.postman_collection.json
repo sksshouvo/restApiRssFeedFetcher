@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "4d396b8e-6d39-46c8-a64a-a4d6ee141264",
+		"name": "RssFeedFetcher",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5540193",
+		"_collection_link": "https://pulse-tech-ltd.postman.co/workspace/Core-Api~41748400-6f61-4739-a0b3-29b9292ef262/collection/5540193-4d396b8e-6d39-46c8-a64a-a4d6ee141264?action=share&source=collection_link&creator=5540193"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sksshouvo2@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/authenticaion/login",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"authenticaion",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Test Person\",\r\n    \"email\": \"sksshouvo2@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/api/authentication/register",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"api",
+								"authentication",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RssFeeds",
+			"item": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
