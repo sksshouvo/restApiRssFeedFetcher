@@ -27,8 +27,10 @@
   "dependencies": {
     "cloud": "^2.0.2",
     "config": "^3.3.10",
+    "dotenv": "^16.4.1",
     "express": "^4.18.2",
-    "mongoose": "^8.1.0",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0"
   },
