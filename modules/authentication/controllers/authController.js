@@ -31,31 +31,7 @@ const login = async (req, res) => {
 
 // Register controller
 const register = async (req, res) => {
-    try {
-        // Logic to register user
-        // Assuming you have username and password in req.body
-        const { username, password } = req.body;
-
-        // Check if user already exists
-        const existingUser = await User.findOne({ username });
-
-        if (existingUser) {
-            // User already exists
-            return res.status(400).json({ error: 'User already exists' });
-        }
-
-        // Create new user
-        const newUser = new User({ username, password });
-        await newUser.save();
-
-        // User registered successfully
-        return res.status(201).json({ message: 'Registration successful', newUser });
-
-    } catch (error) {
-        // Error handling
-        console.error('Error during registration:', error);
-        return res.status(500).json({ error: 'Internal server error' });
-    }
+    console.log("HI there");
 };
 
 module.exports = {
